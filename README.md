@@ -95,4 +95,25 @@ node index.js
 ```
 * Press Ctrl and on it . A browser will open in which u can see ui.
 
+# Running Our Project Using Nodemon :
 
+### "Nodemon"  is used to restart the server again and again automatically when any changes have been detected in the project files.
+
+* Step 1 -  Open cmd prompt or powershell in your code editor.
+
+* Step 2 - Type the follwing cmd :
+```
+nodemon index.js
+```
+* It will run the server and you will see the link like this :
+```
+[nodemon] 2.0.4
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,json
+[nodemon] starting `node index.js`
+
+ Hello World server is on and running at
+    (http://localhost:4000)
+```
+* Press Ctrl and on it . A browser will open in which u can see ui.
