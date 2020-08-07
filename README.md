@@ -52,7 +52,47 @@ Note : The 'express()' is a top-level function exported by the express module. I
 ```
 app.get('/',(req,res) => { res.send('Hello...Deepesh Welcome to Express World!!!'); });
 ```
+Note : Get method is used to call http server. It will take 2 arguments:
+
+1. Url.
+2. CallBack Function. 
+
+* Display all the values of an array list.
+```
+app.get('/api/courses',(req,res) => {
+    res.send(['BCA','MCA','MBA','BCOM']);
+});
+```
+Note : Here , req and res are two types of object parameters which will return an object.
 
 
+* Multiple arguments passed in request.
+```
+app.get('/api/post/:year/:month',(req,res) => { res.send(req.params); });
+```
+
+* Need a listener who listen our request. 
+``` 
+const port = process.env.PORT || 4000;
+
+app.listen(port,() => console.log(`Hello World server is on and running at http://localhost:${port} `));
+```
+Note : "process.env.PORT" is used for taking port 
+ number dynamically from environment variable.
+
+# Running Our Project :
+
+* Step 1 -  Open cmd prompt or powershell in your code editor.
+
+* Step 2 - Type the follwing cmd :
+```
+node index.js
+```
+* It will run the server and you will see the link like this :
+```
+ Hello World server is on and running at
+    (http://localhost:4000)
+```
+* Press Ctrl and on it . A browser will open in which u can see ui.
 
 
