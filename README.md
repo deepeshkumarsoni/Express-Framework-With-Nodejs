@@ -5,13 +5,13 @@ Express is a minimal and flexible Node.js web application framework that provide
 
 ## Know The Things First :
 
-- First we need to install Node.js on your machine from (https://nodejs.org/en/download/).
+- Firstly , we need to install Node.js on your machine from (https://nodejs.org/en/download/).
 
-- Second we need to install package.json file in your project folder that we learn later.
+- Secondly , we need to install package.json file in your project folder that we learn later.
 
-- Third we need to install Express on your project folder.
+- Thirdly , we need to install Express on your project folder.
 
-- Fourth we need to install Nodemon on our project that we will see later.
+- Fourthly , we need to install Nodemon on our project that we will see later.
 
 ## Configure Our Project :
 
@@ -38,16 +38,16 @@ npm install -g nodemon
     ```
     const express = require('express');
     ```
-```    
+    
 Note : When we do above step it will return a function i.e express().  Here, 'require' is a function when we call it , it will go to the node module and export express module in index.js file.  
-```
+
 * We need an app using express.
    ```
    const app = express();
    ```
-```
-Note : The 'express()' is a top-level function exported by the express module.It creates an Express Application.
-```
+
+Note : The 'express()' is a top-level function exported by the express module. It creates an Express Application.
+
 * We need to create an request for http server.
 ```
 app.get('/',(req,res) => { res.send('Hello...Deepesh Welcome to Express World!!!'); });
