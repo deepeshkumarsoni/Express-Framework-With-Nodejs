@@ -86,7 +86,22 @@ app.get('/api/post/:year/:month',(req,res) => { res.send(req.params); });
 ```
 app.get('/api/post/:year/:month',(req,res) => { res.send(req.query); });
 ```
-
+* Handling Get Request. 
+```
+app.get('/api/courses/:id',(req,res)=>{
+    const result = courses.find(c => c.id === 
+    parseInt(req.params.id));
+    if(!result){
+        res.status(404).
+        send("The Course with your given ID was 
+        not found");
+    }
+    else{
+        res.send(result);
+    }
+});
+```
+Note : 'find()' is an Array method which return an Object. When we do " parseInt(req.params.id) " then , req.params.id gives an string value and parseInt will convert that value in Integer.
 
 * Need a listener who listen our request. 
 ``` 
