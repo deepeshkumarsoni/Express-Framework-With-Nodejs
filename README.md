@@ -3,6 +3,18 @@
 ## Intro :
 Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.
 
+# Topics Cover In This Project :
+* REST Full Method(How to handle it) : 
+
+  * GET
+  * PUT
+  * POST
+  * DELETE 
+* Environmet Variable
+* Route Parameters
+* Query Parameters
+* Nodemon
+
 ## Know The Things First :
 
 - Firstly , we need to install Node.js on your machine from (https://nodejs.org/en/download/).
@@ -70,6 +82,11 @@ Note : Here , req and res are two types of object parameters which will return a
 ```
 app.get('/api/post/:year/:month',(req,res) => { res.send(req.params); });
 ```
+* Query arguments passed in request.
+```
+app.get('/api/post/:year/:month',(req,res) => { res.send(req.query); });
+```
+
 
 * Need a listener who listen our request. 
 ``` 
